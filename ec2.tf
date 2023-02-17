@@ -1,7 +1,6 @@
 resource "aws_instance" "web" {
   ami           = var.ami_id
   instance_type = var.instance_type
-  iam_role = "test"
   monitoring = true
   ebs_optimized = true
   root_block_device {
